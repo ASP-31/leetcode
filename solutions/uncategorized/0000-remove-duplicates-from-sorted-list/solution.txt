@@ -11,5 +11,8 @@
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         curr=head
-        while head is not null:
-            if curr.next.val=
+        while head is not NULL:
+            if curr.next.val==curr.val:
+                curr=curr.next.next
+            curr=curr.next
+        return head
