@@ -3,12 +3,12 @@
 **Difficulty:** Medium
 **Language:** python3
 **URL:** [LeetCode](https://leetcode.com/problems/split-array-largest-sum/)
-**Confidence:** ★★★☆☆ (3/5)
+**Confidence:** ★★★★☆ (4/5)
 
 ## Performance
 
 - **Runtime:** 0 ms
-- **Memory:** 0 MB
+- **Memory:** 19.44 MB
 
 ---
 *Solved on 9/20/2026*
