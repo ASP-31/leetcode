@@ -3,12 +3,12 @@
 **Difficulty:** Easy
 **Language:** python3
 **URL:** [LeetCode](https://leetcode.com/problems/merge-strings-alternately/)
-**Confidence:** ★★★☆☆ (3/5)
+**Confidence:** ★★★★★ (5/5)
 
 ## Performance
 
-- **Runtime:** 0 ms
-- **Memory:** 0 MB
+- **Runtime:** 47 ms
+- **Memory:** 19.22 MB
 
 ---
 *Solved on 9/24/2026*
