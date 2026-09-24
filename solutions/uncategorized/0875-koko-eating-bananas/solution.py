@@ -3,42 +3,28 @@
 # Difficulty: Medium
 # Language: python3
 
-from typing import List
+def check(arr,mid,k):
+    totalHours = 0
+    for i in range(len(arr)):
+        totalHours += (arr[i] + mid - 1) // mid
 
+    # return true if required time is less than 
+    # or equals to given hour, otherwise return false
+    return totalHours <= k
 class Solution:
-    
-    # Function to check whether mid speed is enough
-    # to eat all piles of bananas within k hours
-    def check(self, arr, mid, k):
-        totalHours = 0
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
+        low=1
+        high=max(piles)
         
-         for i in range(len(arr)):
-            totalHours += (arr[i] + mid - 1) // mid
-        
-        # Return True if required time is <= k
-        return totalHours <= k
-
-    def minEatingSpeed(self, arr: List[int], k: int) -> int:
-        
-        # Minimum possible speed
-        lo = 1
-        
-        # Maximum possible speed
-        hi = max(arr)
-        
-        res = hi
-
-        while lo <= hi:
-            mid = lo + (hi - lo) // 2
-
-            # Check if current speed works
-            if self.check(arr, mid, k):
-
-                # Try smaller speed
+        res=high
+        while low<=high:
+            mid=low+ (high-low)//2
+            if check(piles, mid, h):
+                high = mid - 1
                 res = mid
-                hi = mid - 1
             else:
-                # Increase speed
-                lo = mid + 1
-
+          
+            # if cant finish bananas in given
+            # hours, then increase the speed
+                low = mid + 1
         return res
