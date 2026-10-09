@@ -7,8 +7,8 @@
 
 ## Performance
 
-- **Runtime:** 0 ms
-- **Memory:** 0 MB
+- **Runtime:** 249 ms
+- **Memory:** 21.5 MB
 
 ---
 *Solved on 10/9/2026*
