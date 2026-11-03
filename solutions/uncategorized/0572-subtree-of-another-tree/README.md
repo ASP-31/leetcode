@@ -5,5 +5,10 @@
 **URL:** [LeetCode](https://leetcode.com/problems/subtree-of-another-tree/)
 **Confidence:** ★★★☆☆ (3/5)
 
+## Performance
+
+- **Runtime:** 63 ms
+- **Memory:** 19.55 MB
+
 ---
 *Solved on 11/3/2026*
